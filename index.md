@@ -3,7 +3,7 @@ layout: default
 title: cecilia-scintilla的博客
 ---
 
-# cecilia-scintilla
+# 塞西莉亚-斯金蒂拉
 
 共同进步！
 
@@ -14,8 +14,8 @@ title: cecilia-scintilla的博客
 <ul>
   {% for post in site.posts %}
     <li style="margin-bottom: 15px;">
-      <!-- 核心修复：必须用 a 标签包裹标题才能点击 -->
-      <a href=" " style="font-size: 18px; color: #0366d6; text-decoration: none;">{{ post.title }}</a >
+      <!-- 核心修复：必须把 post.url 放进来 -->
+      <a href="{{ post.url }} " style="font-size: 18px; color: #0366d6; text-decoration: none;">{{ post.title }}</a >
       <br>
       <small style="color: #888;">{{ post.date | date: "%Y-%m-%d" }}</small>
     </li>
