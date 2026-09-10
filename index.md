@@ -3,7 +3,7 @@ layout: default
 title: cecilia-scintilla的博客
 ---
 
-# 塞西莉亚-斯金蒂拉
+# cecilia-scintilla
 
 共同进步！
 
