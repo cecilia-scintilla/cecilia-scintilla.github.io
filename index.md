@@ -1,11 +1,10 @@
 ---
 layout: default
-title: 我的博客
+title: cecilia-scintilla的博客
 ---
-
 <div style="text-align: center; padding: 40px 0;">
   <h1>cecilia-scintilla</h1>
-  <p>欢迎来到我的个人空间！</p >
+  <p>共同进步！</p >
 </div>
 
 <hr>
