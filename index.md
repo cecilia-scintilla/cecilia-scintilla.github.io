@@ -15,11 +15,6 @@
   }
 </style>
 
----
-layout: default
-title: cecilia-scintilla的博客
----
-
 # cecilia-scintilla
 
 共同进步！
