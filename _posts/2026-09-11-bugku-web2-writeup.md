@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bugku CTF - WEB2 writeup"
+title: "Bugku CTF - WEB2 Writeup"
 date: 2026-09-11
 categories: CTF
 ---
