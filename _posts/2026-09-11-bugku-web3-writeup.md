@@ -5,7 +5,7 @@ date: 2026-09-11
 categories: CTF
 ---
 
-Bugku CTF - WEB1 Writeup
+Bugku CTF - WEB3 Writeup
 
 一、题目信息
 
