@@ -1,0 +1,56 @@
+Bugku CTF - WEB1 Writeup
+
+一、 题目信息
+
+· 平台：Bugku CTF
+· 题目名称：WEB1
+· 题目类型：Web / 基础入门
+· 题目地址：http://160.202.254.160:14608
+
+二、 题目分析（现象描述）
+
+打开题目链接后，页面显示了一个满屏都是“滑稽”笑脸（Smiley Faces）的动画效果。页面没有任何输入框、按钮或明显的提示信息。右键尝试操作，页面也没有任何交互反馈。
+
+对于此类没有任何明显入口的 Web 题目，第一反应应当是检查前端源代码（Source Code Review），寻找开发者可能遗留的敏感信息或隐藏提示。
+
+三、 解题过程
+
+1. 查看网页源代码
+
+有多种方式可以查看网页的源代码：
+
+· 快捷键法：按下键盘上的 Ctrl + U。
+· 开发者工具：按下 F12 打开开发者工具，切换到“元素”（Elements）标签。
+· URL 前缀法：在 URL 前面加上 view-source:，即 view-source:http://160.202.254.160:14608。
+
+2. 寻找关键信息
+
+打开源代码后，在 <body> 标签内部，发现了一段被 HTML 注释符 <!-- --> 包裹起来的代码。具体内容如下：
+
+```html
+<body id="body" onload="init()">
+    <!-- flag{cccf9f15d3e6a325dc402807c5fcf7fd} -->
+    <script type="text/javascript" src="js/ThreeCanvas.js"></script>
+    <script type="text/javascript" src="js/Snow.js"></script>
+    <script type="text/javascript">...</script>
+</body>
+```
+
+3. 获取 Flag
+
+直接将注释中的内容提取出来，即为本题的 Flag。
+
+四、 最终 Flag
+
+```text
+flag{cccf9f15d3e6a325dc402807c5fcf7fd}
+```
+
+五、 原理与总结
+
+· 漏洞原理：此题属于典型的源码泄露/敏感信息泄露。开发人员在编写网页时，将包含敏感信息（如 Flag）的代码注释掉，但并未在服务器端删除，导致前端用户可以通过查看源代码直接获取。
+· CTF 经验总结：
+  1. 做 Web 题的第一步永远是看源码。包括 HTML 源码、JavaScript 文件、CSS 文件。
+  2. 熟练使用浏览器的开发者工具（F12）。除了查看 HTML 源码，还可以利用“网络（Network）”面板查看请求响应，利用“应用（Application）”面板查看 Cookie 和 Local Storage。
+  3. 搜索敏感关键词。在源码较长时，可以使用 Ctrl + F 快速搜索 flag、key、admin 等词汇。
+  4. 不要被页面的视觉效果迷惑，很多时候看着复杂的动画只是干扰项，真正的漏洞往往隐藏在最基础的地方。
