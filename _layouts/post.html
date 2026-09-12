@@ -3,14 +3,21 @@ layout: default
 ---
 
 <style>
-  /* 只隐藏主题自带的蓝绿色头部，不要隐藏你自己的 */
+  /* 隐藏主题自带的蓝绿色头部 */
   .page-header {
     display: none !important;
   }
+  
+  /* 强制修改自定义头部里的文字为白色，并添加阴影防看不清 */
+  .custom-post-header h1, 
+  .custom-post-header p {
+    color: #ffffff !important; /* 强制白色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* 加一点黑色的阴影，让白字在浅色背景上更清晰 */
+  }
 </style>
 
-<!-- 这里修改了class名称，避免冲突 -->
-<div class="custom-post-header" style="background-image: url('/bg.jpg'); background-size: cover; background-position: center; padding: 100px 0; text-align: center; color: white;">
+<!-- 背景图头部 -->
+<div class="custom-post-header" style="background-image: url('/bg.jpg'); background-size: cover; background-position: center; padding: 100px 0; text-align: center;">
   <h1>{{ page.title }}</h1>
   <p>{{ page.date | date: "%Y-%m-%d" }}</p >
 </div>
