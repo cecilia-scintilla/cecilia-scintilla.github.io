@@ -19,4 +19,6 @@ Bugku CTF - WEB3 Writeup
 
 ·  速通法： 查看源代码然后使用python直接编译代码
 
+·  f12点开开发者工具ctrl+shift+p运行disable JavaScript的指令然后解码
+
 
