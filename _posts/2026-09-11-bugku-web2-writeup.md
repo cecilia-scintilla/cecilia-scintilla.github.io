@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bugku CTF - WEB2 Writeup"
-date: 2026-09-11 16:00:00 +0800
+date: 2026-09-11 18:00:00 +0800
 categories: CTF
 ---
 一、题目信息
