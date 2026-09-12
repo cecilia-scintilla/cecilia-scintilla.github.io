@@ -1,13 +1,21 @@
 ---
 layout: default
 ---
-<!-- 这里模仿你首页的头部背景 -->
-<div class="site-header" style="background-image: url('/bg.jpg'); background-size: cover; background-position: center; padding: 100px 0; text-align: center; color: white;">
-  <h1 class="post-title" style="font-size: 2.5em; font-weight: bold;">{{ page.title }}</h1>
-  <p class="post-meta" style="margin-top: 10px;">{{ page.date | date: "%Y-%m-%d" }}</p >
+
+<style>
+  /* 只隐藏主题自带的蓝绿色头部，不要隐藏你自己的 */
+  .page-header {
+    display: none !important;
+  }
+</style>
+
+<!-- 这里修改了class名称，避免冲突 -->
+<div class="custom-post-header" style="background-image: url('/bg.jpg'); background-size: cover; background-position: center; padding: 100px 0; text-align: center; color: white;">
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.date | date: "%Y-%m-%d" }}</p >
 </div>
 
-<!-- 下面是文章正文内容 -->
-<div class="post-content" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+<!-- 文章正文 -->
+<div style="max-width: 800px; margin: 0 auto; padding: 20px;">
   {{ content }}
 </div>
