@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bugku CTF - 聪明的小羊 Writeup
-date: 2026-09-30 21:55:00 +0800
+date: 2026-09-30 21:55:00 +0900
 categories: CTF
 ---
 
