@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<div class="main-content">
+
+  {% if content != "" %}
+    {{ content }}
+  {% endif %}
+
+  {% comment %} 子模块（按 platform 字段分组） {% endcomment %}
+  {% for grp in page.groups %}
+    <div class="module-card">
+      <h3>{{ grp.title }}</h3>
+      {% if grp.desc %}<p class="module-desc">{{ grp.desc }}</p>{% endif %}
+      {% assign group_posts = site.posts | where: "platform", grp.platform %}
+      <p class="module-count">共 {{ group_posts.size }} 篇</p>
+      {% if group_posts.size > 0 %}
+        <ul class="post-list">
+          {% for post in group_posts limit: 8 %}
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+        {% if group_posts.size > 8 %}
+          <p><a class="module-more" href="{{ grp.url | relative_url }}">还有 {{ group_posts.size | minus: 8 }} 篇，进模块看全部 →</a></p>
+        {% endif %}
+      {% else %}
+        <p class="module-desc">{{ grp.empty | default: "这个模块还没有文章。" }}</p>
+      {% endif %}
+      {% if grp.url %}<p><a class="module-more" href="{{ grp.url | relative_url }}">进入 {{ grp.title }} 模块 →</a></p>{% endif %}
+    </div>
+  {% endfor %}
+
+  {% comment %} 该分类下的全部文章 {% endcomment %}
+  {% if page.category %}
+    {% assign cat_posts = site.categories[page.category] %}
+    {% if cat_posts %}
+      <div class="module-section">
+        <h2 class="section-title">{{ page.category }} 全部记录</h2>
+        <p class="section-desc">共 {{ cat_posts.size }} 篇，新的排在最上面。</p>
+        <ul class="post-list">
+          {% for post in cat_posts %}
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  {% endif %}
+
+</div>
