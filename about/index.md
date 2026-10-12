@@ -32,6 +32,9 @@ permalink: /about/
     <a href="{{ '/ctf/' | relative_url }}">CTF Writeups</a>
   </p>
 
-  <p style="margin-top:26px;"><a class="module-more" href="{{ '/' | relative_url }}">← 返回首页</a></p>
+  <p style="margin-top:26px;">
+    <a class="module-more" href="{{ '/' | relative_url }}">← 返回首页</a>
+    <a class="module-more" href="{{ '/ctf/' | relative_url }}" style="margin-left:18px;">CTF Writeups →</a>
+  </p>
 
 </div>
