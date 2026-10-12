@@ -1,4 +1,3 @@
-[2026-10-06-ctfhub-http-method-writeup.md](https://github.com/user-attachments/files/33327685/2026-10-06-ctfhub-http-method-writeup.md)
 ---
 layout: post
 title: CTFHub - HTTP Method（请求方式）Writeup
