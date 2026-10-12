@@ -9,9 +9,8 @@ layout: default
 
 <div class="main-content">
 
-  <h2 class="section-title">关于我 🎀</h2>
-  <p>你好，我是 <strong>cecilia-scintilla</strong>，一个正在从零开始学安全的 CTF 选手。</p>
-  <p>这里放我的做题记录：每道题都会写清楚<strong>现象 → 思路 → 步骤 → 原理总结</strong>，方便以后的自己回看，也希望能帮到同样在入门的人。</p>
+  <h2 class="section-title">关于我 🤍</h2>
+  <p>允许一切发生 然后 做个勇敢的人</p>
 
   {% for module in site.data.modules %}
 
