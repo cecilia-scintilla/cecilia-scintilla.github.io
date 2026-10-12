@@ -3,6 +3,7 @@ layout: post
 title: CTFHub - 302跳转 Writeup（用 Burp 看原始响应）
 date: 2026-10-12 17:00:00 +0800
 categories: CTF
+platform: ctfhub
 
 ---
 
