@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CTFHub - HTTP Method（请求方式）Writeup
-date: 2026-10-12 20:00:00 +0800
+date: 2026-10-12 16:00:00 +0800
 categories: CTF
 platform: ctfhub
 ---
