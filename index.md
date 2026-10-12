@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<div class="page-header">
-  <h1 class="project-name">{{ site.title }}</h1>
-  <p class="project-tagline">{{ site.description }}</p>
-</div>
+{% comment %}
+  注意：顶部横幅由主题自带的 .page-header 渲染（标题取 _config.yml 的 site.title），
+  所以这里不要再写 page-header，否则会出现两条横幅。
+{% endcomment %}
 
 <div class="main-content">
 
