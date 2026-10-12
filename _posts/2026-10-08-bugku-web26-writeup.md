@@ -3,6 +3,7 @@ layout: post
 title: Bugku CTF - 抄错的字符 Writeup
 date: 2026-10-01 20:00:00 +0800
 categories: CTF
+platform: bugku
 ---
 
 Bugku CTF - 抄错的字符 Writeup

@@ -3,6 +3,7 @@ layout: post
 title: Bugku CTF - 隐写 Writeup
 date: 2026-10-02 20:00:00 +0800
 categories: CTF
+platform: bugku
 ---
 
 Bugku CTF - 隐写 Writeup

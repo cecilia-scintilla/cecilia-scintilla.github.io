@@ -3,6 +3,7 @@ layout: post
 title: Bugku CTF - 备份是个好习惯 Writeup
 date: 2026-09-29 20:00:00 +0800
 categories: CTF
+platform: bugku
 ---
 
 Bugku CTF - 备份是个好习惯 Writeup

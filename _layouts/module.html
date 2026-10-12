@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="main-content">
+
+  {% if content != "" %}
+    {{ content }}
+  {% endif %}
+
+  {% comment %}
+    用 post 的 platform 字段筛选本模块的文章。
+    以后写新文章时，在开头加上一行即可，例如：
+      platform: bugku    （Bugku 的题）
+      platform: ctfhub   （CTFHub 的题）
+  {% endcomment %}
+  {% assign module_posts = site.posts | where: "platform", page.platform %}
+  <p class="section-desc">共 {{ module_posts.size }} 篇，新的排在最上面。</p>
+
+  {% if module_posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in module_posts %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <div class="module-card">
+      <p class="module-desc">{{ page.empty | default: "这个模块还没有文章。" }}</p>
+    </div>
+  {% endif %}
+
+  <p style="margin-top:26px;"><a class="module-more" href="{{ '/ctf/' | relative_url }}">← 返回 CTF Writeups</a></p>
+
+</div>

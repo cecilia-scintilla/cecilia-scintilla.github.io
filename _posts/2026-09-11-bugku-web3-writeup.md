@@ -3,6 +3,7 @@ layout: post
 title: "Bugku CTF - WEB3 Writeup"
 date: 2026-09-11 20:00:00 +0800
 categories: CTF
+platform: bugku
 ---
 
 Bugku CTF - WEB3 Writeup
@@ -20,5 +21,4 @@ Bugku CTF - WEB3 Writeup
 ·  速通法： 查看源代码然后使用python直接编译代码
 
 ·  f12点开开发者工具ctrl+shift+p运行disable JavaScript的指令然后解码
-
 

@@ -3,6 +3,7 @@ layout: post
 title: "Bugku CTF - WEB1 Writeup"
 date: 2026-09-11 17:42:00 +0800
 categories: CTF
+platform: bugku
 ---
 
 Bugku CTF - WEB1 Writeup

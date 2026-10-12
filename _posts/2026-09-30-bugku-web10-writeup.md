@@ -3,6 +3,7 @@ layout: post
 title: Bugku CTF - 这是一张单纯的图片 Writeup
 date: 2026-09-14 20:00:00 +0800
 categories: CTF
+platform: bugku
 ---
 
 Bugku CTF - 这是一张单纯的图片 Writeup

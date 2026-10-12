@@ -3,6 +3,7 @@ layout: post
 title: Bugku CTF - 头等舱 Writeup
 date: 2026-09-12 16:17:00 +0800
 categories: CTF
+platform: bugku
 ---
 
 Bugku CTF - 头等舱 Writeup

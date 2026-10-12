@@ -3,6 +3,7 @@ layout: post
 title: Bugku CTF - 矛盾 Writeup
 date: 2026-09-26 20:00:00 +0800
 categories: CTF
+platform: bugku
 ---
 
 Bugku CTF - 矛盾 Writeup

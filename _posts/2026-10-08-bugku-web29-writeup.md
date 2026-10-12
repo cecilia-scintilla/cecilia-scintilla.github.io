@@ -3,6 +3,7 @@ layout: post
 title: Bugku CTF - 眼见非实 Writeup
 date: 2026-10-05 20:00:00 +0800
 categories: CTF
+platform: bugku
 ---
 
 Bugku CTF - 眼见非实 Writeup

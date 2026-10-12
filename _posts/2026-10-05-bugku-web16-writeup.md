@@ -3,6 +3,7 @@ layout: post
 title: Bugku CTF - linux Writeup
 date: 2026-09-21 20:00:00 +0800
 categories: CTF
+platform: bugku
 ---
 
 Bugku CTF - linux Writeup

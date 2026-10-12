@@ -1,0 +1,114 @@
+<style>
+  /* ===== 顶部横幅：用 bg.jpg 替换 Cayman 的绿色渐变（全站生效） ===== */
+  .page-header {
+    background-image: url('{{ "/bg.jpg" | relative_url }}') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding: 90px 0 !important;
+  }
+
+  /* 背景图偏浅，横幅文字加深色阴影保证看得清 */
+  .page-header .project-name,
+  .page-header .project-tagline {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.85), 0 0 12px rgba(255, 255, 255, 0.6);
+  }
+
+  /* ===== 首页模块卡片 ===== */
+  .module-section {
+    margin: 38px 0 30px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    color: #8a3d5c;
+    margin: 0 0 6px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f2d3dd;
+  }
+
+  .section-desc {
+    color: #777;
+    margin: 0 0 18px;
+  }
+
+  .module-card {
+    border: 1px solid #f0d6de;
+    border-left: 5px solid #d16b8f;
+    border-radius: 8px;
+    background: #fffdfe;
+    padding: 18px 22px;
+    margin: 0 0 18px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+
+  .module-card h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: #8a3d5c;
+  }
+
+  .module-card .module-desc {
+    color: #555;
+    margin: 0 0 8px;
+  }
+
+  .module-card .module-count {
+    color: #999;
+    font-size: 14px;
+    margin: 0 0 12px;
+  }
+
+  .module-more {
+    display: inline-block;
+    font-size: 15px;
+    color: #0366d6;
+    text-decoration: none;
+    border-bottom: 1px dashed #9dc2ea;
+  }
+
+  .module-more:hover {
+    color: #d16b8f;
+    border-bottom-color: #d16b8f;
+  }
+
+  /* ===== 文章列表 ===== */
+  .post-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .post-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+  }
+
+  .post-list .post-date {
+    color: #999;
+    font-size: 13px;
+    margin-left: 8px;
+  }
+
+  /* ===== “关于我” 模块 ===== */
+  .about-links a {
+    margin-right: 14px;
+  }
+
+  @media (max-width: 640px) {
+    .page-header {
+      padding: 60px 0 !important;
+    }
+
+    .section-title {
+      font-size: 24px;
+    }
+
+    .module-card {
+      padding: 14px 16px;
+    }
+
+    .module-card h3 {
+      font-size: 20px;
+    }
+  }
+</style>

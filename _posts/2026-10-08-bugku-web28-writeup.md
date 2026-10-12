@@ -3,6 +3,7 @@ layout: post
 title: Wireshark 抓包与流量分析入门（附 telnet 题目实战）
 date: 2026-10-04 20:00:00 +0800
 categories: CTF
+platform: bugku
 ---
 
 Wireshark 抓包与流量分析入门（附 telnet 题目实战）
