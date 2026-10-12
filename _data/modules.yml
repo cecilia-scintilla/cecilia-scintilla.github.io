@@ -12,11 +12,11 @@
     - title: "BUGKU CTF"
       desc: "Bugku Web、Misc、Crypto、Reverse、Pwn 等入门题目的解题记录。"
       platform: bugku
-      url: /ctf/bugku/
+      url: /ctf/bugku.html
       empty: "还没有 Bugku 的 writeup。"
 
     - title: "CTFHub"
       desc: "CTFHub 技能树与综合题目的解题记录。"
       platform: ctfhub
-      url: /ctf/ctfhub/
+      url: /ctf/ctfhub.html
       empty: "CTFHub 的 writeup 还在写，先把 Blog 架子搭好，第一篇很快来。"
