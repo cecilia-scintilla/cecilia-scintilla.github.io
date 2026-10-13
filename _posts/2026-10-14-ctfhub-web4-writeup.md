@@ -2,7 +2,7 @@
 layout: post
 title: CTFHub - 基础认证 Writeup（Basic Auth 爆破）
 platform: ctfhub
-date: 2026-10-14 22:00:00 +0800
+date: 2026-10-14 00:08:00 +0800
 categories: CTF
 ---
 
