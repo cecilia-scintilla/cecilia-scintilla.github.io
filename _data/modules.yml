@@ -20,3 +20,9 @@
       platform: ctfhub
       url: /ctf/ctfhub.html
       empty: "CTFHub 的 writeup 还在写，先把 Blog 架子搭好，第一篇很快来。"
+
+    - title: "通用"
+      desc: "不属于某个固定平台的题目：杂项工具、比赛真题、思路总结等。"
+      platform: general
+      url: /ctf/general.html
+      empty: "通用模块还没有文章，写完第一篇就会自动出现。"
