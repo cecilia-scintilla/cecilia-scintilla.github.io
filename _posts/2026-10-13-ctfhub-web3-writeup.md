@@ -2,7 +2,7 @@
 layout: post
 title: CTFHub - Cookie 伪造 Writeup
 platform: ctfhub
-date: 2026-10-08 20:00:00 +0800
+date: 2026-10-13 20:00:00 +0800
 categories: CTF
 ---
 
