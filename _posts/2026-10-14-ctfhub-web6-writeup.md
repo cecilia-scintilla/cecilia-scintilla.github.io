@@ -2,7 +2,7 @@
 layout: post
 title: CTFHub - 目录遍历 Writeup（Apache 目录列表实战）
 platform: ctfhub
-date: 2026-10-14 23:01:00 +0800
+date: 2026-10-14 16:01:00 +0800
 categories: CTF
 ---
 
