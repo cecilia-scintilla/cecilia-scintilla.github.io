@@ -165,43 +165,6 @@ Mercurial（命令名 hg）= 分布式版本控制工具，和 Git 是同类。
 ★ 找到 flag：ctfhub{demo_hg_flag_abc999}
 ```
 
-**方法二：用 dvcs-ripper（题目/教程推荐，但 HG 这题经常不好使）**
-
-```bash
-# 安装依赖（Kali / Linux）
-sudo apt install -y perl libio-socket-ssl-perl
-
-# 下载工具
-git clone https://github.com/kost/dvcs-ripper.git
-cd dvcs-ripper
-
-# 利用
-perl rip-hg.pl -u http://challenge-xxx:10800/.hg/
-
-# 它会在当前目录生成一个以域名命名的文件夹
-```
-
-**⚠️ 但工具会报错**（教程里记录了这个现象）：
-
-```text
-根据返回结果可知利用是成功的，所有关键元数据都已下载完毕，
-但由于本地系统缺少 hg 客户端，工具无法完成最后的组装步骤。
-```
-
-**然后你 `hg log` / `hg cat` 都会失败**：
-
-```bash
-hg log
-# 能看到提交历史（如果装了 mercurial）
-#   changeset:   1:1e7cf632c422
-#   tag:         tip
-#   summary:     add flag      ← ★ 这行告诉你 flag 在版本 1
-
-hg cat flag_455230392.txt -r 1
-# abort: flag_455230392.txt@d999632c...: no match found    ← ✘ 报错
-```
-
-**原因**：工具没把 `.hg/store/data/` 里的实际数据文件下载下来（所以 `hg cat` 找不到内容）。
 
 **这时候就走"手工路线"**（就是题目提示说的）：
 
@@ -348,23 +311,6 @@ fncache = Filename Cache（文件名缓存）
   很多时候你拿着文件名，直接在浏览器里访问网站上的同名文件就行。
 ```
 
-- 🎉 **CTFHub「信息泄露」系列全部通关**：
-
-```text
-✅ 目录遍历           —— Apache 目录列表
-✅ PHPINFO            —— Ctrl+F 搜 flag
-✅ 备份文件下载：
-     ✅ 网站源码      —— www.zip
-     ✅ bak 文件      —— index.php.bak
-     ✅ vim 缓存      —— .index.php.swp
-     ✅ .DS_Store     —— macOS 目录属性
-✅ Git 泄露：
-     ✅ Log           —— 提交历史
-     ✅ Stash         —— 暂存内容
-     ✅ Index         —— 暂存区
-✅ SVN 泄露           —— wc.db + pristine
-✅ HG 泄露            —— fncache（本题）
-```
 
 **配套文件**（都在工作区）：
 
