@@ -19,6 +19,11 @@ groups:
     platform: general
     url: /ctf/general.html
     empty: "通用模块还没有文章，写完第一篇就会自动出现。"
+  - title: "PIKACHU"
+    desc: "皮卡丘靶场的练习记录：SQL 注入、XSS、文件上传、命令执行等常见漏洞。"
+    platform: pikachu
+    url: /ctf/pikachu.html
+    empty: "PIKACHU 靶场还没有文章，第一篇写完就会自动出现。"
 ---
 
 这里按平台把题目分类，点进任意一个模块就能看到该平台的全部 writeup。
