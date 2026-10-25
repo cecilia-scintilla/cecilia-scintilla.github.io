@@ -7,8 +7,9 @@ layout: default
     {{ content }}
   {% endif %}
 
-  {% comment %} 子模块（按 platform 字段分组） {% endcomment %}
-  {% for grp in page.groups %}
+  {% comment %} 子模块统一从 _data/modules.yml 读取（单一数据源，不再和首页各写一份） {% endcomment %}
+  {% assign card_module = site.data.modules | where: "category", page.category | first %}
+  {% for grp in card_module.groups %}
     {% assign group_posts = site.posts | where: "platform", grp.platform %}
     <div class="module-card">
       <div class="module-head">

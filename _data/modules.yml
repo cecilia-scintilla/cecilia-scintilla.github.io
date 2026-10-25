@@ -1,4 +1,5 @@
-# 首页模块清单：想加板块/平台就改这里，index.md 会自动渲染
+# ★ 模块清单（唯一数据源）：首页 和 /ctf/ 列表页都读这个文件
+#   以后加平台/板块，只改这里 + 新建对应的 ctf/xxx.md 即可
 # category = _layouts/category.html（该分类下所有文章）
 # module   = _layouts/module.html（某个平台/系列的文章，用 platform 字段匹配）
 
