@@ -158,19 +158,9 @@
 
   /* ===== 手机端优化（≤640px，桌面端完全不受影响）===== */
   @media (max-width: 640px) {
-    /* 横幅更紧凑：第一屏就能看到正文 */
+    /* 横幅保持原来的高度（顶部大图要大一点，这是有意的） */
     .page-header {
-      padding: 44px 0 !important;
-    }
-
-    .page-header .project-name {
-      font-size: 26px !important;
-      line-height: 1.25;
-    }
-
-    .page-header .project-tagline {
-      font-size: 13px;
-      margin-bottom: 0;
+      padding: 60px 0 !important;
     }
 
     /* 长链接/长单词不再把整页撑出横向滚动条 */
