@@ -28,11 +28,14 @@ layout: default
       {% for grp in module.groups %}
         {% assign group_posts = site.posts | where: "platform", grp.platform %}
         <div class="module-card">
-          <h3>{{ grp.title }}</h3>
+          <div class="module-head">
+            <h3>{% if grp.icon %}<span class="module-icon">{{ grp.icon }}</span>{% endif %}{{ grp.title }}</h3>
+            <span class="module-badge{% if group_posts.size == 0 %} is-empty{% endif %}">{% if group_posts.size > 0 %}{{ group_posts.size }} 篇{% else %}空着{% endif %}</span>
+          </div>
           {% if grp.desc %}<p class="module-desc">{{ grp.desc }}</p>{% endif %}
-          <p class="module-count">共 {{ group_posts.size }} 篇</p>
+          <p class="module-updated">{% if group_posts.size > 0 %}最近更新 {{ group_posts.first.date | date: "%Y-%m-%d" }}{% else %}还没开始{% endif %}</p>
           {% if grp.url %}
-            <a class="module-more" href="{{ grp.url | relative_url }}">查看全部 writeup →</a>
+            <p><a class="module-more" href="{{ grp.url | relative_url }}">查看全部 writeup →</a></p>
           {% endif %}
         </div>
       {% endfor %}
