@@ -155,4 +155,137 @@
       font-size: 20px;
     }
   }
+
+  /* ===== 手机端优化（≤640px，桌面端完全不受影响）===== */
+  @media (max-width: 640px) {
+    /* 横幅更紧凑：第一屏就能看到正文 */
+    .page-header {
+      padding: 44px 0 !important;
+    }
+
+    .page-header .project-name {
+      font-size: 26px !important;
+      line-height: 1.25;
+    }
+
+    .page-header .project-tagline {
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+
+    /* 长链接/长单词不再把整页撑出横向滚动条 */
+    .main-content {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .main-content p,
+    .main-content li {
+      line-height: 1.75;
+    }
+
+    .section-title {
+      font-size: 20px;
+      margin: 28px 0 6px;
+      padding-bottom: 8px;
+    }
+
+    .section-desc {
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+    /* 卡片：标题与徽章同一行，标题可压缩，徽章不换行 */
+    .module-card {
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+
+    .module-head {
+      flex-wrap: nowrap;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .module-head h3 {
+      font-size: 17px;
+      line-height: 1.4;
+      min-width: 0;
+    }
+
+    .module-badge {
+      font-size: 11px;
+      padding: 0 9px;
+      line-height: 1.9;
+    }
+
+    .module-desc {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 6px;
+    }
+
+    .module-updated {
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    /* 链接做成手指友好：点击区至少 40px 高 */
+    .module-more {
+      display: inline-block;
+      font-size: 15px;
+      padding: 8px 0;
+      min-height: 40px;
+    }
+
+    /* 文章列表：标题独占宽度，日期单独一行 */
+    .post-list li {
+      padding: 12px 0;
+    }
+
+    .post-list a {
+      display: block;
+      line-height: 1.55;
+    }
+
+    .post-list .post-date {
+      display: block;
+      margin: 2px 0 0;
+      font-size: 12px;
+    }
+
+    /* 文章正文在手机上更易读 */
+    .main-content h1 {
+      font-size: 24px;
+    }
+
+    .main-content h2 {
+      font-size: 20px;
+      margin-top: 26px;
+    }
+
+    .main-content h3 {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .main-content pre {
+      font-size: 13px;
+      padding: 10px;
+    }
+
+    .main-content blockquote {
+      padding: 0 12px;
+    }
+
+    .main-content table {
+      font-size: 14px;
+    }
+
+    /* 页面底部导航多留点空间，拇指好点 */
+    .main-content > p:last-child {
+      margin-bottom: 18px;
+    }
+  }
+
 </style>
