@@ -2,7 +2,7 @@
 layout: post
 title: Pikachu - 管理工具 XSS后台 Writeup（pkxss 初始化与 cookie 搜集链）
 platform: pikachu
-date: 2026-10-29 21:15:00 +0800
+date: 2026-10-29 20:56:00 +0800
 categories: CTF
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Pikachu - URL 重定向 Writeup（开放重定向的实战价值）
 platform: pikachu
-date: 2026-10-29 20:56:00 +0800
+date: 2026-10-29 20:53:00 +0800
 categories: CTF
 ---
 

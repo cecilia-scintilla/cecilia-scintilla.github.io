@@ -2,7 +2,7 @@
 layout: post
 title: Pikachu - SSRF(file_get_content) Writeup（php://filter 与 data://）
 platform: pikachu
-date: 2026-10-29 21:05:00 +0800
+date: 2026-10-29 20:55:00 +0800
 categories: CTF
 ---
 
