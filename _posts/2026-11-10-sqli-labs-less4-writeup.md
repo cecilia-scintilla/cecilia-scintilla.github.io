@@ -2,7 +2,7 @@
 layout: post
 title: sqli-labs - Less-4 基于错误的 GET 双引号括号型注入 Writeup
 platform: sqli-labs
-date: 2026-11-10 08:40:00 +0800
+date: 2026-11-10 08:30:00 +0800
 categories: CTF
 ---
 
