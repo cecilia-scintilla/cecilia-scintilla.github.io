@@ -2,7 +2,7 @@
 layout: post
 title: sqli-labs - Less-2 基于错误的 GET 数字型注入 Writeup
 platform: sqli-labs
-date: 2026-11-10 12:20:00 +0800
+date: 2026-11-10 08:20:00 +0800
 categories: CTF
 ---
 

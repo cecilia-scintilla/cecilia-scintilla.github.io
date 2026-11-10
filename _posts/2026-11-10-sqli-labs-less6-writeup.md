@@ -2,7 +2,7 @@
 layout: post
 title: sqli-labs - Less-6 基于错误的双注入（双引号）Writeup
 platform: sqli-labs
-date: 2026-11-10 13:00:00 +0800
+date: 2026-11-10 09:00:00 +0800
 categories: CTF
 ---
 
