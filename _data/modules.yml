@@ -37,3 +37,10 @@
       platform: pikachu
       url: /ctf/pikachu.html
       empty: "PIKACHU 靶场还没有文章，第一篇写完就会自动出现。"
+
+    - title: "SQLI-LABS"
+      icon: "💉"
+      desc: "sqli-labs 注入靶场闯关记录：字符型/数字型、报错、盲注、堆叠、宽字节注入等。"
+      platform: sqli-labs
+      url: /ctf/sqli-labs.html
+      empty: "sqli-labs 靶场还没有文章，第一篇写完就会自动出现。"
