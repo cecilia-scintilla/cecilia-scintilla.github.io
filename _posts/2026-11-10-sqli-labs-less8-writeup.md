@@ -2,7 +2,7 @@
 layout: post
 title: sqli-labs - Less-8 布尔盲注（单引号）Writeup
 platform: sqli-labs
-date: 2026-11-10 07:50:00 +0800
+date: 2026-11-10 08:55:00 +0800
 categories: CTF
 ---
 

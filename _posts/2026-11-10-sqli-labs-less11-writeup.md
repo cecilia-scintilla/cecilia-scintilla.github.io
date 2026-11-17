@@ -2,7 +2,7 @@
 layout: post
 title: sqli-labs - Less-11 POST 登录框注入（单引号）Writeup
 platform: sqli-labs
-date: 2026-11-10 07:20:00 +0800
+date: 2026-11-10 08:40:00 +0800
 categories: CTF
 ---
 

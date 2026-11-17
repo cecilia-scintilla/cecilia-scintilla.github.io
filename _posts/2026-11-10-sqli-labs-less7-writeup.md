@@ -2,7 +2,7 @@
 layout: post
 title: sqli-labs - Less-7 导出文件（INTO OUTFILE 写 webshell）Writeup
 platform: sqli-labs
-date: 2026-11-10 08:00:00 +0800
+date: 2026-11-10 09:00:00 +0800
 categories: CTF
 ---
 
